@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="myScript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="play(); move();" style="background-color: lightgrey;">
+    <div class="allDivs">
+    <div id="header"><h1>Choose Your Move</h1></div>
+    <div id="myProgress"> 
+        <div id="myBar">10</div>
+    </div>
+
+    <div class=myContainer>
+        <div class="playerMove">
+            <input type="button" name="rock" class="buton" id="rock" onclick="rock()" value="Rock">
+            <input type="button" name="paper" class="buton" id="paper" onclick="paper()" value="Paper">
+            <input type="button" name="scissors" class="buton" id="scissors" onclick="scissors()" value="Scissors">
+            <p id="info">Choose Wisely</p>
+        </div>
+
+        <div class="gameResult">
+            <p id="score">0-0</p>
+            <p disabled id="result"></p>
+        </div>
+        
+        <div class="computerMove">
+            <button disabled class="butonComputer" id="computerRock">Rock</button>
+            <button disabled class="butonComputer" id="computerPaper">Paper</button>
+            <button disabled class="butonComputer" id="computerScissors">Scissors</button>
+            <p id="info">Computer is Thinking...</p>
+        </div>
+    </div>
+    <div><input type="button" name="nextRound" id="nextRound" value="Next Round" onclick="nextRound()"></div>
+</div>
+    
+</body>
+</html>
